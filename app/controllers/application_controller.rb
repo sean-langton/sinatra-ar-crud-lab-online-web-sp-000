@@ -18,5 +18,5 @@ class ApplicationController < Sinatra::Base
   get 'articles' do
 
   end
+  
 end
-rake db:migrate SINATRA_ENV=test
