@@ -19,5 +19,5 @@ class ApplicationController < Sinatra::Base
     @article = Article.new(params)
 
   end
-  
+
 end
