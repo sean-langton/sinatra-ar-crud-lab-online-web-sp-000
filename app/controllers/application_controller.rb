@@ -17,13 +17,13 @@ class ApplicationController < Sinatra::Base
 
   post '/articles' do
     @article = Article.new(title:params[:title], content:params[:content])
-
+    @articles = Article.all
     erb :index
   end
 
   get '/articles' do
     @articles = Article.all
-    
+
     erb :index
   end
 
