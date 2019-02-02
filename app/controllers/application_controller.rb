@@ -40,7 +40,7 @@ class ApplicationController < Sinatra::Base
     article = Article.find(params[:id])
     article.title = "fuck you"
     article.content = "and you too"
-    redirect to "/articles/#{@article.id}"
+    redirect to "/articles/#{article.id}"
   end
 
 end
