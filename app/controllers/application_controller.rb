@@ -47,4 +47,5 @@ class ApplicationController < Sinatra::Base
     article.delete
     erb :index
   end
+  
 end
