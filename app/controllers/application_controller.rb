@@ -37,9 +37,9 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/articles/:id' do
-    @article = Article.find(params[:id])
-    @article.title = "fuck you"
-    @article.content = "and you too"
+    article = Article.find(params[:id])
+    article.title = "fuck you"
+    article.content = "and you too"
     redirect to "/articles/#{@article.id}"
   end
 
